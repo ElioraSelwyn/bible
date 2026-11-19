@@ -1,0 +1,70 @@
+/* bible.elioraselwyn.com: same palette and type as elioraselwyn.com and the v1 reader */
+:root{--ink:#302f2b;--muted:#6d6a62;--paper:#fffdf8;--cream:#f6f0e4;--line:#ded5c5;--green:#1f3a30;--sage:#465343;--gold:#aa8750;--gold-text:#8a6a35;--mark:#f3e2b8;--r-size:1}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:linear-gradient(180deg,#f6f0e4 0%,#efe6d3 45%,#eee6d6 100%) fixed;color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.5}
+a{color:var(--green)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.skip{position:absolute;left:-9999px;top:0;background:var(--green);color:#f3e6cc;padding:10px 14px;z-index:20}
+.skip:focus{left:8px;top:8px}
+.es-head{background:rgba(247,241,227,.96);border-bottom:1px solid var(--line)}
+.es-head-in{max-width:1180px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.es-brand{text-decoration:none;display:flex;flex-direction:column}
+.es-brand-name{font:700 25px/1.1 Georgia,serif;color:var(--green);letter-spacing:.01em}
+.es-brand-mark{font:700 10px/1.6 Arial,Helvetica,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.es-nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:6px 20px;align-items:center;justify-content:flex-end}
+.es-nav a{font:700 11px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--sage);text-decoration:none;padding:8px 0;border-bottom:2px solid transparent}
+.es-nav a:hover,.es-nav a[aria-current=page]{border-bottom-color:var(--gold)}
+.es-nav .es-subscribe{border:1px solid var(--gold);border-radius:999px;padding:8px 14px}
+.wrap{max-width:760px;margin:24px auto;background:var(--paper);padding:20px clamp(16px,4vw,40px) 28px;border-radius:14px;box-shadow:0 12px 34px rgba(55,48,38,.10)}
+.crumbs{font:13px/1.4 Arial,Helvetica,sans-serif;color:var(--muted);margin-bottom:8px}
+.crumbs a{color:var(--muted)}
+h1{font:400 2.1em/1.2 Georgia,serif;color:var(--green);margin:.3em 0 .4em}
+.lede{color:var(--muted);font-size:1.05em}
+.quick{font:15px/1.5 Arial,Helvetica,sans-serif}
+.grp{font:700 13px/1.2 Arial,Helvetica,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:22px 0 8px}
+.books{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:2px 12px}
+.books a{display:block;padding:9px 6px;min-height:44px;text-decoration:none;border-bottom:1px solid #efe7d8;font-size:17px}
+.books a:hover{background:var(--cream)}
+.chaps{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:6px}
+.chaps a{display:flex;align-items:center;justify-content:center;min-height:46px;border:1px solid var(--line);border-radius:6px;background:var(--cream);text-decoration:none;font-size:16px}
+.chaps a:hover{border-color:var(--gold)}
+.btn{font:700 15px/1.2 Arial,Helvetica,sans-serif;color:var(--green);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:10px 12px;min-height:44px;min-width:44px;display:inline-flex;align-items:center;gap:6px;text-decoration:none;cursor:pointer}
+.btn:hover{border-color:var(--gold)}
+.btn[aria-disabled=true]{opacity:.4;cursor:default}
+[hidden]{display:none!important}
+.r-bar{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:10px 0;background:var(--paper);border-bottom:1px solid var(--line)}
+.r-back{background:var(--green);color:#f3e6cc;border-color:var(--green)}
+.r-pick{flex:1 1 auto;justify-content:space-between;font:400 17px Georgia,serif}
+.r-size{display:inline-flex;gap:4px}
+.r-notice{font:15px/1.45 Arial,Helvetica,sans-serif;background:#fbf3df;border:1px solid #e3cf9f;border-left:4px solid var(--gold-text);border-radius:6px;padding:10px 12px;margin:10px 0}
+.r-text{font-size:calc(1.15em * var(--r-size));line-height:1.7;padding:6px 2px 18px}
+.r-text h1{font-size:2em}
+.sh{font:700 .8em/1.3 Arial,Helvetica,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-text);margin:1.6em 0 .4em}
+.sh2{font:italic 400 .95em/1.4 Georgia,serif;color:var(--muted);margin:1.2em 0 .3em}
+.xref{font-size:.8em;color:var(--muted);margin:0 0 .6em}
+.r-text p{margin:0 0 .8em}
+.r-text .d{font-style:italic;color:var(--muted)}
+.q1,.q2,.qr,.li1,.li2{margin:0;padding-left:1.6em;text-indent:-1.2em}
+.q2,.li2{padding-left:2.8em}
+.qr{text-align:right}.pc{text-align:center}.b{height:.7em}
+.v{font:700 .62em/0 Arial,Helvetica,sans-serif;color:var(--gold-text);vertical-align:super;padding:0 .15em 0 .1em;text-decoration:none;text-indent:0;scroll-margin-top:30vh}
+.v:target{background:var(--mark);border-radius:2px}
+.fn{font:700 .6em/0 Arial,sans-serif;vertical-align:super;text-decoration:none;padding:0 .1em}
+.hl{background:var(--mark);box-shadow:0 0 0 .12em var(--mark);border-radius:2px}
+.notes{font-size:calc(.9em * var(--r-size));color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.notes summary{cursor:pointer;font:700 14px Arial,sans-serif;color:var(--green);min-height:44px;display:flex;align-items:center}
+.notes li{margin:0 0 .4em;scroll-margin-top:30vh}
+.r-nav{display:flex;justify-content:space-between;gap:8px;margin:18px 0 4px}
+.es-foot{max-width:760px;margin:0 auto 40px;padding:0 20px;font:13px/1.55 Arial,Helvetica,sans-serif;color:var(--muted)}
+.es-foot a{color:var(--green)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:700px){
+ .es-head-in{padding:12px 16px;gap:8px}.es-brand-name{font-size:21px}.es-nav{margin-left:0;justify-content:flex-start;gap:2px 14px}
+ .wrap{margin:12px 8px;padding:14px 16px 22px}
+ .r-bar{position:static}.r-back,.r-pick{flex:1 1 100%;justify-content:center}.r-pick{justify-content:space-between}
+ .r-prev,.r-next{flex:1 1 0}.r-prev span,.r-next span{display:none}.r-size{flex:2 1 0}.r-size .btn{flex:1 1 0;justify-content:center}
+ .r-text{font-size:calc(1.1em * var(--r-size))}
+}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media print{.es-head,.r-bar,.r-nav,.es-nav,.crumbs{display:none}.wrap{box-shadow:none}}
